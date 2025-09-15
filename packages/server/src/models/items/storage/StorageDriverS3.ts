@@ -43,6 +43,7 @@ export default class StorageDriverS3 extends StorageDriverBase {
 				accessKeyId: this.config.accessKeyId,
 				secretAccessKey: this.config.secretAccessKeyId,
 			},
+			forcePathStyle: true, // 新增对 pathStyle 的支持
 		});
 	}
 
